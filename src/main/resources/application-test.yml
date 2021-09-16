@@ -1,0 +1,10 @@
+datasources:
+  default:
+#    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=carros_test
+    url: jdbc:h2:mem:testDb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE
+    driverClassName: org.h2.Driver
+#    bom pra schemas pequenos, e quando não usamos código nativo do banco específico (postgres, mysql)
+
+logger:
+  debug:
+    io.micronaut.transaction: DEBUG
